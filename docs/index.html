@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>www.hotelradenwijaya.com</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Background full screen */
+    .full-screen-bg {
+      background: url('raden wijaya.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+    }
+
+    .hero-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5); /* Add overlay */
+    }
+    .featured-section {
+      background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.8)),
+                  url('raden wijaya.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 50px 0;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-title {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .btn-primary {
+      background-color: #ffc107;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #e0a800;
+    }
+
+    /* Padding and margin adjustments for spacing */
+    .hero-content {
+      margin-bottom: 50px; /* Adjust to provide more space for featured rooms */
+    }
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase" href="#">
+        <span style="color: #ffc107;">Hotel</span> Raden Wijaya
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- Scroll to Rooms Section -->
+          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Admin" class="btn btn-outline-warning btn-sm ms-3">Admin Id</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="full-screen-bg">
+    <div class="hero-content text-center">
+      <h1 class="display-4">Selamat Datang Di Hotel Raden Wijaya</h1>
+      <p class="lead">Rasakan kemewahan dan kenyamanan bersama kami.</p>
+      <button class="" style="background-color: #e0a800;">
+        <a class="nav-link" href="#featured-rooms">Rooms</a>
+      </button>
+    </div>
+  </div>
+
+  <!-- Featured Rooms Section -->
+  <section id="featured-rooms" class="featured-section">
+    <div class="container">
+      <h2 class="text-center text-white mb-4">Featured Rooms</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="room 1.jpg" class="card-img-top" alt="Room 1">
+            <div class="card-body">
+              <h5 class="card-title">Twin Bed Room</h5>
+              <h6 class="card-title">Rp.300.000/malam</h6>
+              <p class="card-text">Nikmati pengalaman mewah dengan kamar twin bed kami.</p>
+              <a href="#" class="btn btn-primary">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="room 2.jpg" class="card-img-top" alt="Room 2">
+            <div class="card-body">
+              <h5 class="card-title">Suite Room</h5>
+              <h6 class="card-title">Rp.500.000/malam</h6>
+              <p class="card-text">Cocok untuk keluarga dan rombongan besar.</p>
+              <a href="#" class="btn btn-primary">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="room 3.jpeg" class="card-img-top" alt="Room 3">
+            <div class="card-body">
+              <h5 class="card-title">Standard Room</h5>
+              <h6 class="card-title">Rp.350.000/malam</h6>
+              <p class="card-text">Terjangkau dan nyaman untuk menginap Anda.</p>
+              <a href="#" class="btn btn-primary">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="cari.html" class="btn btn-primary btn-lg">Reservasi Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Hotel Raden Wijaya. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
